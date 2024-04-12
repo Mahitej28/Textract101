@@ -6,7 +6,7 @@ import boto3
 import boto3.session
 
 my_w = tk.Tk()
-my_w.geometry("450x400")
+my_w.geometry("650x600")
 my_w.title("AWS Textract")
 
 def upload_file():
@@ -20,7 +20,7 @@ def upload_file():
         Img = Image.open(filename)
 
         # Image Resizing
-        img_resize = Img.resize((400, 200))
+        img_resize = Img.resize((600, 400))
         Img = ImageTk.PhotoImage(img_resize)
         # Update the image displayed in the label
         img_label.configure(image=Img)
